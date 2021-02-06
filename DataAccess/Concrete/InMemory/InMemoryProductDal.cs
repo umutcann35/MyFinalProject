@@ -1,5 +1,6 @@
 ﻿using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace DataAccess.Concrete.InMemory
     public class InMemoryProductDal : IProductDal
     {
         List<Product> _products;
-        private Product productToDelete;
+        
 
         public InMemoryProductDal()
         {
@@ -71,6 +72,12 @@ namespace DataAccess.Concrete.InMemory
         {
             throw new NotImplementedException();
         }
+
+        public List<ProductDetailDto> GetProductDetails()
+        {
+            throw new NotImplementedException();
+        }
+    }
     }
 
-}
+
